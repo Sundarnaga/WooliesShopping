@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "512ba66c-0b74-4431-9ad9-fc0662667851",
+		"name": "Woolies-Shopping_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://wooliesshoppingcartapi.azurewebsites.net/shopping/user",
+					"protocol": "https",
+					"host": [
+						"wooliesshoppingcartapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"shopping",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TrolleyTotal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"products\": [\r\n    {\r\n      \"name\": \"string\",\r\n      \"price\": 0\r\n    }\r\n  ],\r\n  \"specials\": [\r\n    {\r\n      \"quantities\": [\r\n        {\r\n          \"name\": \"string\",\r\n          \"quantity\": 0\r\n        }\r\n      ],\r\n      \"total\": 0\r\n    }\r\n  ],\r\n  \"quantities\": [\r\n    {\r\n      \"name\": \"string\",\r\n      \"quantity\": 0\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://wooliesshoppingcartapi.azurewebsites.net/shopping/trolleyTotal",
+					"protocol": "https",
+					"host": [
+						"wooliesshoppingcartapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"shopping",
+						"trolleyTotal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://wooliesshoppingcartapi.azurewebsites.net/shopping/sort?sortoption=low",
+					"protocol": "https",
+					"host": [
+						"wooliesshoppingcartapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"shopping",
+						"sort"
+					],
+					"query": [
+						{
+							"key": "sortoption",
+							"value": "low"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
