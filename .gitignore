@@ -1,0 +1,8 @@
+.vs/
+Woolies.Shopping.Infra/bin/
+/obj/*
+*.*/obj/*.*
+Woolies.Shopping.Infra/obj/
+Woolies.Shopping.Interface/bin/Debug/
+bin
+obj
